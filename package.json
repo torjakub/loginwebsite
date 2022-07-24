@@ -1,0 +1,46 @@
+{
+  "name": "developress",
+  "title": "developress theme foundation",
+  "version": "1.0.0",
+  "main": "src/common.js",
+  "scripts": {
+    "lint:scss": "npx stylelint '**/*.scss'",
+    "lint:scss-fix": "npx stylelint '**/*.scss' --fix",
+    "lint:js": "npx eslint '**/*.js'",
+    "lint:js-fix": "npx eslint '**/*.js' --fix",
+    "dev": "webpack --mode=development --watch",
+    "start": "npm run dev",
+    "build": "webpack --mode=production",
+    "bundle:zip": "npm run build && gulp bundle"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@wordpress/eslint-plugin": "^9.3.0",
+    "autoprefixer": "^10.4.7",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.5",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "css-loader": "^6.7.1",
+    "dotenv": "^16.0.1",
+    "eslint-loader": "^4.0.2",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.1.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "sass": "^1.52.2",
+    "sass-loader": "^13.0.0",
+    "stylelint": "^14.8.5",
+    "stylelint-config-standard-scss": "^4.0.0",
+    "stylelint-csstree-validator": "^2.0.0",
+    "stylelint-selector-bem-pattern": "^2.1.1",
+    "stylelint-webpack-plugin": "^3.3.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "eslint-config-wordpress": "^2.0.0",
+    "gsap": "^3.10.4"
+  }
+}

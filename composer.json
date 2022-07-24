@@ -1,0 +1,26 @@
+{
+  "name": "developress/website",
+  "autoload": {
+    "psr-4": {
+      "developress\\": "./"
+    }
+  },
+  "authors": [
+    {
+      "name": "adambasa-dp",
+      "email": "adam.basa@developress.io"
+    }
+  ],
+  "scripts": {
+    "lint": "./vendor/bin/phpcs .",
+    "lint:fix": "./vendor/bin/phpcbf ."
+  },
+  "require-dev": {
+    "automattic/vipwpcs": "^2.3",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+    "squizlabs/php_codesniffer": "^3.7",
+    "wp-coding-standards/wpcs": "^2.3",
+    "friendsofphp/php-cs-fixer": "^3.8",
+    "phpcompatibility/phpcompatibility-wp": "^2.1"
+  }
+}

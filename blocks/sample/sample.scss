@@ -1,0 +1,19 @@
+@import "../../src/scss/for-blocks";
+
+.sample {
+}
+
+@include min-size(md) {
+  .sample {
+  }
+}
+
+@include min-size(lg) {
+  .sample {
+  }
+}
+
+@include min-size(xl) {
+  .sample {
+  }
+}
