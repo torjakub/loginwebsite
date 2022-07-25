@@ -1,15 +1,15 @@
 .logpage {
-	&__background {
-	  background-image: url("./img/backgroundpic.png");
-	  background-size: cover;
-	  background-position-x: 90%;
-	  width: 100vw;
-	  height: 100vh;
 
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	}
+  background-image: url("./img/backgroundpic.png");
+  background-size: cover;
+  background-position-x: 90%;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 
   	&__container {
 	  width: 25rem;
@@ -64,9 +64,7 @@
 
 @include min-size(lg) {
   .logpage {
-	&__background{
-	  //background-position-x: 0%;
-	}
+
 	&__container {
 	  width: 32rem;
 	  height: 34rem;
