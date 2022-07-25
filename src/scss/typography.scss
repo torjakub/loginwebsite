@@ -1,7 +1,11 @@
 h1,
 .h1 {
-  font-family: var(--font-monospace);
+  font-family: var(--font-poppins);
   font-weight: bold;
+  font-size: 2.5rem;
+  color: var(--buttonbcg);
+  margin-left: 10%;
+  margin-top: 2rem;
 }
 
 h2,
@@ -43,6 +47,26 @@ h6,
   font-family: var(--font-monospace);
   font-weight: bold;
 }
+
+p {
+  font-size: 1rem;
+  font-weight: lighter;
+  font-family: var(--font-open-sans);
+  color: var(--darkgrey);
+  margin: -1rem 10% 0;
+  line-height: 1.5;
+}
+
+.logpage {
+  ::placeholder {
+	font-family: var(--font-open-sans);
+	font-size: 1.2rem;
+	opacity: 1 !important; //for firefox users as firefox overrides opacity of placeholder
+	color: black ;
+  }
+
+}
+
 
 sub,
 .sub {
@@ -102,4 +126,42 @@ th,
 
 td,
 .td {
+}
+
+@include min-size(md) {
+  h1 {
+	font-size: 2.7rem;
+  }
+
+  p {
+	font-size: 1rem;
+	margin-bottom: -1rem;
+  }
+}
+
+@include min-size(lg) {
+  h1 {
+	font-size: 2.9rem;
+  }
+
+  p {
+	font-size: 1.2rem;
+  }
+}
+
+@include min-size(xl) {
+  h1 {
+	font-size: 3.4rem;
+  }
+
+  p {
+	font-size: 1.4rem;
+	margin-top: -2rem;
+  }
+}
+
+@include min-size(xxl) {
+  h1 {
+	font-size: 4rem;
+  }
 }

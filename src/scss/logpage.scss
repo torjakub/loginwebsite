@@ -1,0 +1,140 @@
+.logpage {
+	&__background {
+	  background-image: url("./img/backgroundpic.png");
+	  background-size: cover;
+	  background-position-x: 90%;
+	  width: 100vw;
+	  height: 100vh;
+
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	}
+
+  	&__container {
+	  width: 25rem;
+	  height: 25rem;
+	  border-radius: 0.5rem;
+	  background-color: var(--backgroundcolor);
+
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-around;
+
+	}
+
+	&__input {
+	  width: 80%;
+	  height: 2.5rem;
+	  margin: 0 10% 1rem;
+	  color: var(--darkgrey);
+	  border-radius: 0.5rem;
+	  border: 1px solid var(--grey);
+	  padding-left: 1rem;
+	}
+
+
+	&__submit {
+
+	  display: flex;
+	  justify-content: space-between;
+	  margin: 1rem 10% 0;
+	}
+
+	&__button {
+	  height: 3rem;
+	  width: 6rem;
+	  color: var(--white);
+	  background-color: var(--buttonbcg);
+	  border: 1px solid var(--buttonbcg);
+	  border-radius: 0.5rem;
+	  font-family: var(--font-poppins);
+	  font-size: 1.25rem;
+	}
+
+	&__forgot-password {
+	  color: var(--darkgrey);
+	  font-size: 1rem;
+	  font-family: var(--font-open-sans);
+	  flex-shrink: 1;
+	}
+
+
+}
+
+@include min-size(lg) {
+  .logpage {
+	&__background{
+	  //background-position-x: 0%;
+	}
+	&__container {
+	  width: 32rem;
+	  height: 34rem;
+
+	  &__input {
+		height: 3.3rem;
+		border-radius: 0.8rem;
+	  }
+
+	  &__button {
+		width: 7rem;
+		height: 3.5rem;
+		font-size: 1.4rem;
+	  }
+	}
+  }
+}
+
+@include min-size(xl) {
+  .logpage {
+	&__container {
+	  width: 36rem;
+	  height: 38rem;
+	}
+
+	&__input {
+	  height: 3.6rem;
+	}
+
+	&__forgot-password {
+	  font-size: 1.2rem;
+	}
+
+	&__button {
+	  width: 7.5rem;
+	  height: 3.8rem;
+	  font-size: 1.5rem;
+	}
+
+	::placeholder {
+	  font-size: 1.4rem;
+	}
+  }
+}
+
+@include min-size(xxl) {
+  .logpage {
+	&__container {
+	  width: 38rem;
+	  height: 40rem;
+	}
+
+	&__input {
+	  height: 3.9rem;
+	}
+
+	&__forgot-password {
+	  font-size: 1.3rem;
+	}
+
+	&__button {
+	  width: 8rem;
+	  height: 4rem;
+	  font-size: 1.7rem;
+	}
+
+	::placeholder {
+	  font-size: 1.3rem;
+	}
+  }
+}
